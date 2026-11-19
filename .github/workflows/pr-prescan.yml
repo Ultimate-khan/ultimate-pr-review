@@ -1,0 +1,19 @@
+name: PR Prescan
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  prescan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run deterministic prescan on the PR diff
+        run: git diff origin/${{ github.base_ref }}...HEAD | python3 scripts/prescan.py --format text
