@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.jpeg" alt="Ultimate logo" width="200">
+</p>
+
 # ultimate-pr-review
 
 An AI agent skill that reviews pull requests and code diffs like a senior engineer — deterministic scanning first (secrets, risky patterns, missing tests), then semantic analysis (security, correctness, performance, tests), reported as a structured review anchored to exact files and lines.
