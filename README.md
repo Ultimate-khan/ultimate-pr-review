@@ -51,3 +51,10 @@ This repo dogfoods its own gate: [.github/workflows/pr-prescan.yml](.github/work
 
 - If a repo contains `REVIEW_GUIDE.md` (or `.review-guide.md` / `docs/review-guide.md`), its rules override generic style opinions.
 - Reviews and inline comments are only posted with explicit user confirmation.
+
+## The Ultimate skills family
+
+- **[UltimateSEO](https://github.com/Ultimate-khan/ultimateseo)** — evidence-led SEO audits, strategy, content, and reporting workflows
+- **ultimate-pr-review** (this repo) — senior-engineer PR reviews with a deterministic prescan and CI gate
+
+**Created and maintained by Bilal Khan — Ultimate-khan.**
