@@ -41,6 +41,8 @@ git diff origin/main...HEAD | python3 scripts/parse_diff.py
 - run: git diff origin/main...HEAD | python3 scripts/prescan.py --format text
 ```
 
+This repo dogfoods its own gate: [.github/workflows/pr-prescan.yml](.github/workflows/pr-prescan.yml) runs the prescan on every pull request and fails the check on any critical finding.
+
 ## Notes
 
 - If a repo contains `REVIEW_GUIDE.md` (or `.review-guide.md` / `docs/review-guide.md`), its rules override generic style opinions.
